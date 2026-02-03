@@ -154,6 +154,8 @@ a:hover {
   background: transparent;
   cursor: pointer;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-toggle::before,
@@ -167,12 +169,27 @@ a:hover {
   transition: var(--transition);
 }
 
+.nav-toggle-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-accent);
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--transition);
+}
+
 .nav-toggle::before {
-  top: 6px;
+  top: 5px;
 }
 
 .nav-toggle::after {
-  bottom: 6px;
+  bottom: 5px;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar {
+  opacity: 0;
 }
 
 .nav-toggle[aria-expanded="true"]::before {
@@ -632,17 +649,27 @@ a:hover {
 /* Mobile */
 @media (max-width: 768px) {
   .nav-toggle {
-    display: block;
+    display: flex;
+  }
+
+  .site-header {
+    --header-height: 72px;
+  }
+
+  .site-header .nav {
+    padding: 0.5rem 1.5rem;
+    min-height: var(--header-height);
+    box-sizing: border-box;
   }
 
   .nav-links {
     position: fixed;
-    top: 57px;
+    top: var(--header-height);
     left: 0;
     right: 0;
     background: #fff;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 0.75rem 1.5rem;
     gap: 0;
     border-bottom: 1px solid rgba(68, 101, 137, 0.1);
     transform: translateY(-100%);
