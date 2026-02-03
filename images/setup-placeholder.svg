@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#d9e5f2"/>
+  <rect x="100" y="150" width="600" height="300" rx="8" fill="#446589" fill-opacity="0.2"/>
+  <text x="400" y="300" font-family="sans-serif" font-size="18" fill="#446589" text-anchor="middle">Flower bucket stands</text>
+  <text x="400" y="330" font-family="sans-serif" font-size="14" fill="#446589" fill-opacity="0.8" text-anchor="middle">Replace with your photo</text>
+</svg>
