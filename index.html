@@ -18,10 +18,14 @@
 <body>
   <header class="site-header" role="banner">
     <nav class="nav" aria-label="Main navigation">
-      <a href="#hero" class="nav-logo">Coastal Floral Bar</a>
+      <a href="#hero" class="nav-logo">
+        <div class="logo">
+          <div class="logo-title">Coastal Floral Bar</div>
+          <div class="logo-line"></div>
+          <div class="logo-subtitle">Aimée Lemenager</div>
+        </div>
+      </a>
       <ul class="nav-links">
-        <li><a href="#provide">What We Provide</a></li>
-        <li><a href="#setup">The Setup</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -35,77 +39,34 @@
       <div class="hero-image" role="img" aria-label="Floral bar setup"></div>
       <div class="hero-content">
         <h1 class="hero-title">Coastal Floral Bar</h1>
+        <div class="hero-line"></div>
         <p class="hero-subtitle">Floral Bar Service — Southern California</p>
-        <a href="mailto:coastalfloralbar@gmail.com" class="hero-email">coastalfloralbar@gmail.com</a>
-        <a href="#provide" class="btn btn-primary">Learn More</a>
+        <p class="hero-description">We bring a complete floral bouquet bar experience to your event, offering both full-service and self-serve options.</p>
+        <p class="hero-description">From fresh blooms to wrapping supplies, we handle every detail so your guests can create beautiful, personalized bouquets.</p>
+        <a href="#how-it-works" class="hero-cta">See how it works</a>
       </div>
     </section>
 
-    <section id="provide" class="section section-provide" aria-labelledby="provide-heading">
-      <div class="container">
-        <h2 id="provide-heading" class="section-title">What We Provide</h2>
-        <div class="provide-grid">
-          <article class="provide-card">
-            <span class="provide-icon" aria-hidden="true">🌸</span>
-            <h3>Full Service or Self Serve</h3>
-            <p>Floral Bouquet Bar tailored to your event style.</p>
-          </article>
-          <article class="provide-card">
-            <span class="provide-icon" aria-hidden="true">✂️</span>
-            <h3>Stem Cutting Sheers</h3>
-            <p>Quality tools for guests to create their bouquets.</p>
-          </article>
-          <article class="provide-card">
-            <span class="provide-icon" aria-hidden="true">📜</span>
-            <h3>Bouquet Wrapping Paper</h3>
-            <p>Elegant wrapping for each guest&rsquo;s creation.</p>
-          </article>
-          <article class="provide-card">
-            <span class="provide-icon" aria-hidden="true">🎀</span>
-            <h3>Ribbon or Twine</h3>
-            <p>Finishing touches to match your palette.</p>
-          </article>
-          <article class="provide-card">
-            <span class="provide-icon" aria-hidden="true">📋</span>
-            <h3>Instructional Signage</h3>
-            <p>Clear guidance for guests at the bar.</p>
-          </article>
-          <article class="provide-card">
-            <span class="provide-icon" aria-hidden="true">🗑</span>
-            <h3>Discreet Garbage/Compost Can</h3>
-            <p>Keep the space tidy without disrupting the look.</p>
-          </article>
-          <article class="provide-card">
-            <span class="provide-icon" aria-hidden="true">🪣</span>
-            <h3>Bar, Flower Bucket Stands, Umbrella</h3>
-            <p>Complete setup so your bar looks polished.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="setup" class="section section-setup" aria-labelledby="setup-heading">
-      <div class="container">
-        <h2 id="setup-heading" class="section-title">The Setup</h2>
-        <p class="setup-caption">Unedited photos of our beautiful setups</p>
-        <div class="setup-gallery">
-          <figure class="setup-item">
-            <img src="images/hero-placeholder.svg" alt="Full floral bar setup" width="800" height="600" loading="lazy">
-          </figure>
-          <figure class="setup-item">
-            <img src="images/setup-placeholder.svg" alt="Flower bucket stands" width="800" height="600" loading="lazy">
-          </figure>
-          <figure class="setup-item">
-            <img src="images/signage-placeholder.svg" alt="Instructional signage" width="800" height="600" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="how-it-works" class="section section-how" aria-labelledby="how-heading">
+    <section id="how-it-works" class="section section-how-wrapper" aria-labelledby="how-heading">
       <div class="container">
         <h2 id="how-heading" class="section-title">How It Works</h2>
-        <ol class="how-steps">
+        
+        <div class="setup-subsection">
+          <div class="setup-gallery">
+            <figure class="setup-item">
+              <img src="images/buckets.jpg" alt="Flower bucket stands" width="800" height="600" loading="lazy">
+            </figure>
+            <figure class="setup-item">
+              <img src="images/aimock.jpg" alt="Full floral bar setup" width="800" height="600" loading="lazy">
+            </figure>
+            <figure class="setup-item">
+              <img src="images/closeup.jpg" alt="Floral arrangement closeup" width="800" height="600" loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <div class="how-subsection">
+          <ol class="how-steps">
           <li class="how-step">
             <span class="how-step-num" aria-hidden="true">1</span>
             <div>
@@ -117,8 +78,8 @@
             <span class="how-step-num" aria-hidden="true">2</span>
             <div>
               <h3>Budget vs. Premium Focal Flowers</h3>
-              <p><strong>Budget:</strong> Chrysanthemum, Alstroemeria, Carnation, Rose, etc.</p>
-              <p><strong>Premium:</strong> Lily, Peony, Dahlia, Ranunculus, Garden Rose, etc.</p>
+              <p><strong>Budget Examples:</strong> Chrysanthemum, Alstroemeria, Carnation, Rose, etc.</p>
+              <p><strong>Premium Examples:</strong> Lily, Peony, Dahlia, Ranunculus, Garden Rose, etc.</p>
             </div>
           </li>
           <li class="how-step">
@@ -135,50 +96,75 @@
               <p>Sign your contract and we bring everything to your event.</p>
             </div>
           </li>
-        </ol>
+          </ol>
+        </div>
+
+        <div class="provide-subsection">
+          <div class="provide-grid">
+            <article class="provide-card">
+              <svg class="provide-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <h3>Full Service or Self Serve</h3>
+              <p>Floral Bouquet Bar tailored to your event style with instructional signage for clear guidance.</p>
+            </article>
+            <article class="provide-card">
+              <svg class="provide-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 16.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 1 1-4.5 4.5"/><path d="M12 7.5V9"/><path d="M7.5 12H9"/><path d="M16.5 12H15"/><path d="M12 16.5V15"/><path d="M8.8 8.8 10 10"/><path d="M15.2 8.8 14 10"/><path d="M15.2 15.2 14 14"/><path d="M8.8 15.2 10 14"/></svg>
+              <h3>Bar, Flower Bucket Stands, Umbrella</h3>
+              <p>Complete setup so your bar looks polished.</p>
+            </article>
+            <article class="provide-card">
+              <svg class="provide-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+              <h3>Bouquet Supplies</h3>
+              <p>Stem cutting sheers, wrapping paper, ribbon or twine, and discreet garbage/compost can.</p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="pricing" class="section section-pricing" aria-labelledby="pricing-heading">
       <div class="container">
         <h2 id="pricing-heading" class="section-title">Pricing</h2>
-        <div class="pricing-grid">
-          <article class="pricing-card">
-            <h3>Full Service Attendant</h3>
+        <div class="pricing-container">
+          <div class="pricing-item">
             <p class="pricing-amount">$120</p>
-            <p>4-hour maximum service with set up and tear down included.</p>
-          </article>
-          <article class="pricing-card">
-            <h3>Budget Bouquet (per guest)</h3>
+            <h3>Full Service Attendant</h3>
+            <p>4-hour maximum service<br>with set up and tear down.</p>
+          </div>
+          <div class="pricing-item">
             <p class="pricing-amount">$18</p>
-            <p>Up to 5 stems, budget focal flowers.</p>
-          </article>
-          <article class="pricing-card">
-            <h3>Premium Bouquet (per guest)</h3>
+            <h3>Budget Bouquet (per guest)</h3>
+            <p>Up to 5 stems,<br>budget focal flowers.</p>
+          </div>
+          <div class="pricing-item">
             <p class="pricing-amount">$23</p>
-            <p>Up to 5 stems, premium focal flowers.</p>
-          </article>
+            <h3>Premium Bouquet (per guest)</h3>
+            <p>Up to 5 stems,<br>premium focal flowers.</p>
+          </div>
         </div>
-        <div class="pricing-notes">
-          <p>Each bouquet includes 2 greenery stems, 2 filler flower stems, and 1 focal flower stem.</p>
-          <p>20 guest/bouquet minimum. 50% due at signing, 50% due 24 hours before event start.</p>
-          <p>Custom color and font signage, plus seasonal decor, available upon request for an additional fee.</p>
-        </div>
+        <ul class="pricing-notes">
+          <li>Each bouquet includes 2 greenery stems, 2 filler flower stems, and 1 focal flower stem.</li>
+          <li>20 guest/bouquet minimum.</li>
+          <li>50% due at signing, 50% due 24 hours before event start.</li>
+          <li>Custom color and font signage, plus seasonal decor, available upon request for an additional fee.</li>
+        </ul>
       </div>
     </section>
 
     <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
       <div class="container">
         <h2 id="contact-heading" class="section-title">Let&rsquo;s Bring Your Event Together</h2>
-        <p class="contact-tagline">We look forward to bringing your event together through our service.</p>
+        <p class="contact-tagline">Contact Us:</p>
         <div class="contact-links">
-          <a href="mailto:coastalfloralbar@gmail.com" class="contact-email">coastalfloralbar@gmail.com</a>
+          <a href="mailto:coastalfloralbar@gmail.com" class="contact-email">
+            <svg class="icon-email" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            coastalfloralbar@gmail.com
+          </a>
           <a href="https://instagram.com/coastalfloralbar" class="contact-instagram" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram @coastalfloralbar">
             <svg class="icon-instagram" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm5.918-11.405c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             @coastalfloralbar
           </a>
         </div>
-        <p class="contact-area">Serving Southern California</p>
+        <p class="contact-area">Serving the Southern California area</p>
         <p class="copyright">&copy; <span id="year"></span> Coastal Floral Bar. All rights reserved.</p>
       </div>
     </section>
