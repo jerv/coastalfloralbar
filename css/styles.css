@@ -1,13 +1,13 @@
 /* Coastal Floral Bar — Brand colors */
 :root {
-  --color-primary: #d9e5f2;
+  --color-primary: #bed9ed;
   --color-secondary: #446589;
   --color-accent: #2C2C2C;
   --color-cta: #8B5CF6;
   --color-text: #2C2C2C;
   --color-text-muted: #5a5a5a;
   --color-bg: #ffffff;
-  --color-bg-alt: #d9e5f2;
+  --color-bg-alt: #bed9ed;
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Public Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --radius: 12px;
@@ -218,7 +218,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(217, 229, 242, 0.45);
+  background: rgba(190, 217, 237, 0.45);
   z-index: 0;
 }
 
