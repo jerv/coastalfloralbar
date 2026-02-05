@@ -220,7 +220,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(190, 217, 237, 0.45);
+  background: rgba(190, 217, 237, 0.75);
   z-index: 0;
 }
 
