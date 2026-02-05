@@ -25,7 +25,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: var(--color-primary);
+  background: #abcde6;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--color-text);
-  background: var(--color-primary);
+  background: #abcde6;
   min-height: 100vh;
 }
 
@@ -220,7 +220,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(190, 217, 237, 0.75);
+  background: rgba(190, 217, 237, 0.45);
   z-index: 0;
 }
 
