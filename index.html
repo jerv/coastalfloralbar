@@ -74,31 +74,29 @@
         <div class="how-subsection">
           <ol class="how-steps">
           <li class="how-step">
-            <span class="how-step-num" aria-hidden="true">1</span>
+            <span class="how-step-num" aria-hidden="true">
+              <i data-lucide="palette" class="how-step-icon"></i>
+            </span>
             <div>
-              <h3>Choose Your Colors</h3>
+              <h3>1. Choose Your Colors</h3>
               <p>Pick up to 4 colors to include in your package and note any colors you do <em>not</em> want included.</p>
             </div>
           </li>
           <li class="how-step">
-            <span class="how-step-num" aria-hidden="true">2</span>
+            <span class="how-step-num" aria-hidden="true">
+              <i data-lucide="clipboard-check" class="how-step-icon"></i>
+            </span>
             <div>
-              <h3>Budget vs. Premium Focal Flowers</h3>
-              <p><strong>Budget Examples:</strong> Chrysanthemum, Alstroemeria, Carnation, Rose, etc.</p>
-              <p><strong>Premium Examples:</strong> Lily, Peony, Dahlia, Ranunculus, Garden Rose, etc.</p>
-            </div>
-          </li>
-          <li class="how-step">
-            <span class="how-step-num" aria-hidden="true">3</span>
-            <div>
-              <h3>Finalize Details</h3>
+              <h3>2. Finalize Details</h3>
               <p>Confirm guest/bouquet count and choose full service or self-serve.</p>
             </div>
           </li>
           <li class="how-step">
-            <span class="how-step-num" aria-hidden="true">4</span>
+            <span class="how-step-num" aria-hidden="true">
+              <i data-lucide="truck" class="how-step-icon"></i>
+            </span>
             <div>
-              <h3>Sign & We Deliver</h3>
+              <h3>3. Sign & We Deliver</h3>
               <p>Sign your contract and we bring everything to your event.</p>
             </div>
           </li>
@@ -130,25 +128,62 @@
     <section id="pricing" class="section section-pricing" aria-labelledby="pricing-heading">
       <div class="container">
         <h2 id="pricing-heading" class="section-title">Pricing</h2>
-        <div class="pricing-container">
-          <div class="pricing-item">
-            <p class="pricing-amount">$20</p>
-            <h3>Budget Bouquet (per guest)</h3>
-            <p>Up to 5 stems,<br>budget focal flowers.</p>
+        <div class="pricing-panel">
+          <div class="pricing-container">
+            <div class="pricing-item">
+              <p class="pricing-amount">$20</p>
+              <h3>Bouquet (per guest)</h3>
+              <p>Up to 5 stems,<br>budget focal flowers.</p>
+            </div>
           </div>
-          <div class="pricing-item">
-            <p class="pricing-amount">$25</p>
-            <h3>Premium Bouquet (per guest)</h3>
-            <p>Up to 5 stems,<br>premium focal flowers.</p>
-          </div>
+          <ul class="pricing-notes">
+            <li>
+              <span class="pricing-note-icon" aria-hidden="true"><i data-lucide="flower-2"></i></span>
+              <span>Each bouquet includes 2 greenery stems, 2 filler flower stems, and 1 focal flower stem.</span>
+            </li>
+            <li>
+              <span class="pricing-note-icon" aria-hidden="true"><i data-lucide="users"></i></span>
+              <span>20 guest/bouquet minimum.</span>
+            </li>
+            <li>
+              <span class="pricing-note-icon" aria-hidden="true"><i data-lucide="handshake"></i></span>
+              <span>50% deposit due on signing of contract.</span>
+            </li>
+            <li>
+              <span class="pricing-note-icon" aria-hidden="true"><i data-lucide="user-check"></i></span>
+              <span>Full service attendant for an additional fee.</span>
+            </li>
+            <li>
+              <span class="pricing-note-icon" aria-hidden="true"><i data-lucide="sparkles"></i></span>
+              <span>Custom color, font signage, or seasonal decor available upon request for an additional fee.</span>
+            </li>
+          </ul>
         </div>
-        <ul class="pricing-notes">
-          <li>Each bouquet includes 2 greenery stems, 2 filler flower stems, and 1 focal flower stem.</li>
-          <li>20 guest/bouquet minimum.</li>
-          <li>50% due at signing, 50% due 24 hours before event start.</li>
-          <li>Full service attendant for an additional fee.</li>
-          <li>Custom color and font signage, plus seasonal decor, available upon request for an additional fee.</li>
-        </ul>
+        <div class="pricing-calculator" aria-labelledby="calculator-heading">
+          <div class="calculator-copy">
+            <h3 id="calculator-heading">Estimate Your Bouquet Total</h3>
+            <p>Enter your guest count to estimate the bouquet total.</p>
+          </div>
+          <label class="calculator-field" for="guest-count">
+            <span>Guests</span>
+            <input id="guest-count" type="number" min="20" step="1" value="20" inputmode="numeric">
+          </label>
+          <div class="calculator-results" aria-live="polite">
+            <div class="calculator-total">
+              <span>Estimated bouquet total</span>
+              <strong id="estimate-total">$400</strong>
+            </div>
+            <div>
+              <span>50% deposit</span>
+              <strong id="estimate-deposit">$200</strong>
+            </div>
+            <div>
+              <span>Remaining balance</span>
+              <strong id="estimate-balance">$200</strong>
+            </div>
+          </div>
+          <p class="calculator-note" id="estimate-note">20 guest minimum applied.</p>
+        </div>
       </div>
     </section>
 
@@ -172,6 +207,7 @@
     </section>
   </main>
 
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
